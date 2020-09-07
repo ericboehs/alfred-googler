@@ -21,4 +21,4 @@ An Alfred workflow for instantly searching Google using [googler](https://github
 - Hold `Option` to expand truncated title.
 - Hold `Cmd` to see full URL.
 - Copy URL to clipboard with `Cmd-C`.
-- Prefix `googler` arguments to search query to filter results (e.g. `-t y1` to only show results from the past year)
+- Prefix `googler` arguments to search query to filter results (e.g. `-t y1` to only show results from the past year, or `-w stackoverflow.com` to only search Stack Overflow; See `googler --help` for all options)
