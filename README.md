@@ -2,6 +2,8 @@
 
 An Alfred workflow for instantly searching Google using [googler](https://github.com/jarun/googler).
 
+![demo gif](demo.gif)
+
 ## Installation
 
 1. Ensure you have `googler` installed via `brew install googler`.
