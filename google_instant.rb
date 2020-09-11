@@ -7,9 +7,14 @@ query = ARGV.join ' '
 
 exit 1 if query.strip.empty?
 
-require 'json'
+$LOAD_PATH.unshift File.dirname(__FILE__) + '/lightly/lib'
 
-results = JSON.parse `/usr/local/bin/googler --json -n 9 #{query}`
+require 'json'
+require 'lightly'
+
+results = Lightly.new(life: '4h').get query do
+  JSON.parse `/usr/local/bin/googler --json -n 9 #{query}`
+end
 
 output = {
   items: results.map do |result|

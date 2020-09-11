@@ -1,0 +1,3 @@
+[submodule "lightly"]
+	path = lightly
+	url = https://github.com/DannyBen/lightly
